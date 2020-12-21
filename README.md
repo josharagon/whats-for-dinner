@@ -8,17 +8,17 @@ To use What's for dinner? go to this [Github Pages](https://josharagon.github.io
 
 
 ## Usage
-Choose between the 3 food categories or create an entire meal!
+##Choose between the 3 food categories or create an entire meal!
 <img src="https://gyazo.com/24bf343c92aac6035ab2d772933e1257.gif" width=300 height=300>
 <br/>
 <br/>
 
-Clear your random generated recipe
+##Clear your random generated recipe
 <img src="https://gyazo.com/5ae9e59ad06b1186c62eab318a82a009.gif" width=300 height=300>
 <br/>
 <br/>
 
-Adding your own recipe
+##Adding your own recipe
 <img src="https://gyazo.com/9fa0714e59b33f6d21a613b93a69afc1.gif" width=300 height=300>
 <br/>
 <br/>
