@@ -57,11 +57,14 @@ var radioInput4 = document.querySelector('#entire-meal')
 var showRecipeButton = document.querySelector('.show-recipe')
 var cookPot = document.querySelector('img')
 var resultRecipe = document.querySelector('.result')
- var clearButton = document.querySelector('.clear')
-
+var clearButton = document.querySelector('.clear')
+var recipeType = document.querySelector('#recipe-type')
+var recipeName = document.querySelector('#recipe-name')
+var addNew = document.querySelector('#add-new')
 // eventListeners
 showRecipeButton.addEventListener('click', showRecipe)
 clearButton.addEventListener('click', clearRecipe)
+addNew.addEventListener('click', addRecipe)
 //functions
 
 function getRandomIndex(array) {
@@ -84,8 +87,6 @@ function getRandomIndex(array) {
     }
   }
 
-
-
   function clearRecipe() {
     radioInput1.checked = false;
     radioInput2.checked = false;
@@ -94,4 +95,15 @@ function getRandomIndex(array) {
     cookPot.classList.remove('hidden');
     resultRecipe.classList.add('hidden');
     clearButton.classList.add('hidden');
+  }
+
+  function addRecipe(recipeArray) {
+    event.preventDefault()
+    if (recipeType.value == 'dessert' || 'Dessert') {
+      dessert.push(recipeName.value)
+    } else if (recipeType.value == 'main' || 'Main') {
+      main.push(recipeName.value)
+    } else if (recipeType.value == 'side' || 'Side') {
+      side.push(recipeName.value)
+    }
   }
