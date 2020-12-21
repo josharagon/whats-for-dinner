@@ -63,7 +63,7 @@ form {
     font-size: 21px;
 }
 
-input {
+ section input {
     margin-bottom: 25px;
     margin-right: 8px;
     margin-left: 52px;
@@ -94,8 +94,8 @@ h2 {
 
 
 footer {
-    height: 67px;
-    background-color:#0fb9b1;
+    background: rgba(230, 230, 230, 0.88);
+    height: 81px;
     display: flex;
     justify-content: space-between;
     flex-direction: row;
@@ -143,4 +143,22 @@ footer {
   margin-left: 380px;
   font-size: 15px;
   font-family: 'Roboto', sans-serif;
+}
+
+footer label {
+  margin-left: 24px;
+}
+
+input[type=submit] {
+  background-color:#0fb9b1;
+  width: 88px;
+  height: 35px;
+  border-radius: 8px;
+  border: 0px;
+  margin-left: 24px;
+}
+
+footer input[type=text] {
+  height: 36px;
+  width: 159px;
 }
