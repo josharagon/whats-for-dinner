@@ -57,11 +57,11 @@ var radioInput4 = document.querySelector('#entire-meal')
 var showRecipeButton = document.querySelector('.show-recipe')
 var cookPot = document.querySelector('img')
 var resultRecipe = document.querySelector('.result')
-// document.querySelector('')
+ var clearButton = document.querySelector('.clear')
 
 // eventListeners
 showRecipeButton.addEventListener('click', showRecipe)
-
+clearButton.addEventListener('click', clearRecipe)
 //functions
 
 function getRandomIndex(array) {
@@ -75,10 +75,23 @@ function getRandomIndex(array) {
       if (form.path[1][i].checked) {
           cookPot.classList.add('hidden')
           resultRecipe.classList.remove('hidden')
+          clearButton.classList.remove('hidden')
           resultRecipe.innerHTML = `<p>You should make:</p> <h2> ${window[form.path[1][i].id][getRandomIndex(window[form.path[1][i].id])]}!</h2>`
       } else if (form.path[1][3].checked) {
         resultRecipe.innerHTML = `<p>You should make:</p>
         <h2> ${main[getRandomIndex(main)]} with a side of ${side[getRandomIndex(side)]} and ${dessert[getRandomIndex(dessert)]} for dessert!</h2>`
       }
     }
+  }
+
+
+
+  function clearRecipe() {
+    radioInput1.checked = false;
+    radioInput2.checked = false;
+    radioInput3.checked = false;
+    radioInput4.checked = false;
+    cookPot.classList.remove('hidden');
+    resultRecipe.classList.add('hidden');
+    clearButton.classList.add('hidden');
   }
